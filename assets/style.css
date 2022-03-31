@@ -39,5 +39,12 @@ button {
     cursor: grab;
 }
 
+/* main section */
+mark {
+    background: rgb(110,128,166);
+    background: linear-gradient(90deg, rgba(110,128,166,0.4626444327731093) 0%, rgba(231,204,69,0.3505996148459384) 86%);
+   );
+}
+
 /* Footer design starts here */
 
