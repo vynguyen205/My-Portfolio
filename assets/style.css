@@ -10,6 +10,7 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     border-bottom: solid 1px rgb(239, 244, 245);
+    position: sticky
     align-items: center;
     padding: 2em;
     margin-bottom: 50px;
@@ -39,12 +40,48 @@ button {
     cursor: grab;
 }
 
-/* main section */
+/* Bio section */
+pre > h1 {
+    font-size: 35px;
+}
 mark {
+    margin: 0 -0.4em;
+    padding: 0.19em 0.7em;
+    border-radius: 0.5em 1em;
+    background: transparent;
     background: rgb(110,128,166);
-    background: linear-gradient(90deg, rgba(110,128,166,0.4626444327731093) 0%, rgba(231,204,69,0.3505996148459384) 86%);
-   );
+    background: linear-gradient(90deg, rgba(110,128,166,0.4150253851540616) 0%, rgba(231,204,69,0.33939513305322133) 100%);
 }
 
+/* Projects Section */
+.section-header h3 {
+    margin: 50px 40px;
+    padding-bottom: 5px;
+    border-bottom: whitesmoke solid 2px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: space-evenly;
+    margin-top: 50px;
+}
+
+img {
+    width: 20%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-left: 30%;
+    transition: 0.4s ease-in-out
+}
+
+img:hover {
+    width: 70%;
+}
+.description, .description > a {
+    margin: 15px;
+    font-size: 23px;
+}
+
+}
 /* Footer design starts here */
 
