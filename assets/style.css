@@ -3,19 +3,25 @@
     margin:0;
     padding: 0;
     background-color: #272829;
-    color:rgb(226, 226, 226)
+    color:rgb(226, 226, 226);
+}
+main {
+    max-width: 55rem; /*768px*/
+    margin-left: auto;
+    margin-right: auto;
 }
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
     border-bottom: solid 1px rgb(239, 244, 245);
-    position: sticky
+    position: sticky;
     align-items: center;
     padding: 2em;
     margin-bottom: 50px;
 }
-li > a, button {
+li > a {
     font-weight: bolder;
     font-size: 16px;
 }
@@ -29,20 +35,19 @@ li > a, button {
     text-decoration: none;
 }
 .nav-links a:hover {
-   color: rgb(79, 114, 71);
-   cursor: pointer;
-}
-button {
-    box-sizing: border-box;
-    border-radius: 30px 30px 30px 0;
-    padding: 10px;
-    font-size: 12px;
-    cursor: grab;
+    color: rgb(79, 114, 71);
+    cursor: pointer;
 }
 
 /* Bio section */
+.bio {
+    margin: 16% auto;
+}
 pre > h1 {
-    font-size: 35px;
+    font-size:1.70rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+
 }
 mark {
     margin: 0 -0.4em;
@@ -54,34 +59,80 @@ mark {
 }
 
 /* Projects Section */
-.section-header h3 {
-    margin: 50px 40px;
+.section-header {
+    margin-bottom: 3rem;
     padding-bottom: 5px;
+    width:6.5rem;
+    font-size: 23px;
+    letter-spacing: 0.1rem;
     border-bottom: whitesmoke solid 2px;
 }
 
 .project-card {
     display: flex;
     flex-direction: space-evenly;
-    margin-top: 50px;
+    margin-bottom: 10%;
+    border-bottom: 1px solid rgb(68, 68, 68)
 }
 
-img {
-    width: 20%;
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.description h2 {
+    margin-bottom: 18px;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    font-weight: 900;
+}
+.description a {
+    margin: 30px 0;
+    font-size: 15px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.image > img {
+    width: 40%;
     box-sizing: border-box;
-    border-radius: 25px;
-    margin-left: 30%;
-    transition: 0.4s ease-in-out
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    margin: 0 0 10% 30%;
 }
-
-img:hover {
+.image > img:hover {
     width: 70%;
+    
 }
-.description, .description > a {
-    margin: 15px;
+
+/* Skills section design */
+.skills-header {
+    margin-bottom: 3rem;
+    padding-bottom: 5px;
+    border-bottom: whitesmoke solid 2px;
     font-size: 23px;
+    letter-spacing: 0.1rem; 
+    width: 71px;
+    border-bottom: solid 2px;
 }
 
+.center-logos {
+    display: flex;
+    justify-content: space-between;
 }
+
+.center-logos img {
+    width: 5rem;
+    align-content: center;
+}
+
+
 /* Footer design starts here */
-
+footer {
+    text-align: center;
+    margin: 5rem;
+    font-size: 1rem;
+}
