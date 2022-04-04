@@ -42,6 +42,8 @@ li > a {
 /* Bio section */
 .bio {
     margin: 16% auto;
+    display: flex;
+    
 }
 pre > h1 {
     font-size:1.70rem;
@@ -50,16 +52,25 @@ pre > h1 {
 
 }
 mark {
-    margin: 0 -0.4em;
     padding: 0.19em 0.7em;
     border-radius: 0.5em 1em;
     background: transparent;
     background: rgb(110,128,166);
     background: linear-gradient(90deg, rgba(110,128,166,0.4150253851540616) 0%, rgba(231,204,69,0.33939513305322133) 100%);
 }
-
+.profile {
+    margin: auto;
+    justify-content: space-around;
+}
+.bio img {
+    max-width: 70%;
+    max-height: 70%;
+    border-radius:100%;
+    
+    
+}
 /* Projects Section */
-.section-header {
+.project-header {
     margin-bottom: 3rem;
     padding-bottom: 5px;
     width:6.5rem;
@@ -88,7 +99,7 @@ mark {
 }
 .description a {
     margin: 30px 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .image {
@@ -115,13 +126,13 @@ mark {
     border-bottom: whitesmoke solid 2px;
     font-size: 23px;
     letter-spacing: 0.1rem; 
-    width: 71px;
-    border-bottom: solid 2px;
+    width: 4.5rem;
+    border-bottom: solid 2px; 
 }
 
 .center-logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .center-logos img {
@@ -129,10 +140,53 @@ mark {
     align-content: center;
 }
 
-
-/* Footer design starts here */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1rem;
+}
+h5 {
+    margin-top: 5px;
+    color:rgb(154, 151, 151);
+    letter-spacing: 0.05rem;
+}
+.contact-info {
+    margin: 2rem
+}
+.contact-info p {
+    letter-spacing: 0.05rem;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color:rgb(154, 151, 151);
+}
+.wrapper {
+    margin: 20px 0;
+}
+.wrapper .icon{
+    position: relative;
+    background-color: #242222;
+    border-radius: 50%;
+    /* margin: 5px; */
+    width: 35px;
+    height: 35px;
+    line-height: 36px;
+    font-size: 17px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-decoration: none;
+}
 footer {
     text-align: center;
-    margin: 5rem;
-    font-size: 1rem;
+    margin: 2rem 0;
+    border-top: solid 1px rgb(68, 68, 68)
+}
+footer p {
+    margin-top: 1.5rem;
+    font-size: 10px;
+    color:rgb(154, 151, 151);
 }

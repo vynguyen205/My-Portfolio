@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <!-- This is Icon Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <title>My Portfolio</title>
 </head>
+
 <body>
     <main>
         <header>
@@ -17,7 +18,7 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,10 +33,13 @@ to be a
 <mark>full stack developer</mark>.
              </h1>
              </pre>
+             <div class= profile>
+                 <img src="./images/profile-pic.jpeg" alt="Vy's Profile Picture">
+            </div>
          </section>   
 <!-- start of projects -->
         <section>
-            <div class="section-header">
+            <div class="project-header">
                 <h3>Projects</h3>
             </div>
             <div class="project-card">
@@ -61,7 +65,7 @@ to be a
 
     <!-- skills -->
         <section>
-            <div class="section-header">
+            <div class="skills-header">
                 <h3>Skills</h3>
             </div>
             <div class="center-logos">
@@ -74,19 +78,33 @@ to be a
                     
             </div>
         </section>
-
-
-        <!-- <section>
-            <div class="contact-header">
-                <h3>Contacts</h3>
-            </div>
-        </section> -->
-        
     </main>
+
+        <section class="contact-section">
+            <h5>Contacts</h5>
+            <div class="contact-info">
+                <p>Irvine, California, United States</p>
+                
+                <p>vynguyen0520@gmail.com | (714)307-6856</p>
+            </div>
+            
+            <div class="wrapper">
+                <a href="#" class="icon facebook">
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                
+                <a href="#" class="icon instagram">
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+                
+                <a href="https://github.com/" class="icon github">
+                    <span><i class="fab fa-github"></i></span>
+                </a>
+            </div>
+        </section>
+
     <footer>
-        <p> 
-           Made with 🍕 and CSS
-        </p>
+        <p> © 2022 All Rights Reserved </p>
     </footer>
 </body>
 </html>
