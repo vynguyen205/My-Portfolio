@@ -15,30 +15,32 @@
         <header>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#bio">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
          <section class="bio">
              <pre>
-             <h1> 
+                <h1> 
 Hi, I'm
 <mark>Vy Nguyen</mark>.
 I am currently attending
 <mark>UCI Coding Bootcamp</mark>
 to be a
 <mark>full stack developer</mark>.
-             </h1>
+                </h1>
              </pre>
-             <div class= profile>
-                 <img src="./images/profile-pic.jpeg" alt="Vy's Profile Picture">
+
+            <div class= profile>
+                    <img src="./images/profile-pic.jpeg" alt="Vy's Profile Picture">
             </div>
+             
          </section>   
 <!-- start of projects -->
-        <section>
+        <section id="Projects" >
             <div class="project-header">
                 <h3>Projects</h3>
             </div>
@@ -46,17 +48,27 @@ to be a
                 <div class="description">
                     <h2>Personal Portfolio</h2>
                     <p>This Portfolio is pure HTML and CSS. Once I learned Javascript, I will be adding more to this page.</p>
-                    <a href="https://github.com/vynguyen205/My-Portfolio">Github</a>
-                    
+                    <div class="site-container">
+                        <a href="#">Github</a>
+                        
+                        <a href="#">Site</a>
+                    </div>
+                    <!-- <div class="image">
+                        <img src="./images/portfolio-page.png" alt="Portfolio"/>
+                    </div>  -->
                 </div>
             </div>
             <div class="project-card">
                 <div class="description">
                     <h2>CSS Flexbox Cheatsheet</h2>
                     <p>This is a mini-project I did on the side to learn more about CSS.</p>
-                    <a href="https://github.com/vynguyen205/CSS-Snipet-Cheatsheet">Github</a>
-                </div>
+                    <div class="site-container">
+                        <a href="https://github.com/vynguyen205/My-Portfolio">Github</a>
+                        
+                        <a href="#">Site</a>
 
+                    </div> 
+                </div>
                 <div class="image">
                     <img src="./images/css-cheatsheet-2.JPG" alt="CSS Cheatsheet" />
                 </div>
@@ -64,7 +76,7 @@ to be a
         </section>
 
     <!-- skills -->
-        <section>
+        <section id="Skills">
             <div class="skills-header">
                 <h3>Skills</h3>
             </div>

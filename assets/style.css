@@ -5,6 +5,9 @@
     background-color: #272829;
     color:rgb(226, 226, 226);
 }
+html {
+    scroll-behavior: smooth;
+}
 main {
     max-width: 55rem; /*768px*/
     margin-left: auto;
@@ -18,7 +21,7 @@ header {
     border-bottom: solid 1px rgb(239, 244, 245);
     position: sticky;
     align-items: center;
-    padding: 2em;
+    padding: 3em;
     margin-bottom: 50px;
 }
 li > a {
@@ -35,16 +38,18 @@ li > a {
     text-decoration: none;
 }
 .nav-links a:hover {
-    color: rgb(79, 114, 71);
+    color: rgb(123, 107, 180);
     cursor: pointer;
 }
 
 /* Bio section */
 .bio {
-    margin: 16% auto;
+    margin: 16% 0;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-evenly;
 }
+
 pre > h1 {
     font-size:1.70rem;
     font-weight: 900;
@@ -59,15 +64,21 @@ mark {
     background: linear-gradient(90deg, rgba(110,128,166,0.4150253851540616) 0%, rgba(231,204,69,0.33939513305322133) 100%);
 }
 .profile {
-    margin: auto;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
 }
+
 .bio img {
-    max-width: 70%;
-    max-height: 70%;
-    border-radius:100%;
-    
-    
+    width: 230px;
+    height: 230px;
+    border-radius: 15%;
+    box-shadow: inset 15px 15px 15px 15px 
+    rgba(192,196,250,0.75), 0 0 30px
+    rgba(192,196,250,0.75);
 }
 /* Projects Section */
 .project-header {
@@ -92,16 +103,20 @@ mark {
     width: 45%;
 }
 .description h2 {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     font-size: 2rem;
     letter-spacing: 0.02em;
     font-weight: 900;
 }
-.description a {
-    margin: 30px 0;
-    font-size: 13px;
+
+.site-container  {
+    display: flex;
 }
 
+.site-container a {
+    margin: 25px 50px 30px 0;
+    font-size: 14px;
+}
 .image {
     display: flex;
     justify-content: center;
@@ -113,6 +128,9 @@ mark {
     border-radius: 10px;
     transition: 0.4s ease-in-out;
     margin: 0 0 10% 30%;
+    box-shadow: inset 0px 0px 8px 
+    rgba(192,196,250,0.75), 0 0 30px
+    rgba(192,196,250,0.75);
 }
 .image > img:hover {
     width: 70%;
@@ -121,7 +139,7 @@ mark {
 
 /* Skills section design */
 .skills-header {
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
     padding-bottom: 5px;
     border-bottom: whitesmoke solid 2px;
     font-size: 23px;
@@ -132,11 +150,11 @@ mark {
 
 .center-logos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .center-logos img {
-    width: 5rem;
+    width: 7rem;
     align-content: center;
 }
 
@@ -189,4 +207,15 @@ footer p {
     margin-top: 1.5rem;
     font-size: 10px;
     color:rgb(154, 151, 151);
+}
+
+@media (max-width: 640px) {
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        max-width: 50%
+    }
 }
